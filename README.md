@@ -1,1 +1,1 @@
-# tattoo-gan-erator
+# Image synthesis using GANs and style transfer
