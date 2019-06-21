@@ -14,17 +14,17 @@ Clone repository and run setup.sh in terminal which will install all the necessa
 
 ## Usage
 
-# To run the AttGAN model:
+### To run the AttGAN model:
 
 cd AttnGAN
 python2 gen_art.py --gpu 0 --input_text "the bear is eating a banana" --data_dir data/birds --model_path models/bird_AttnGAN2.pth --textencoder_path DAMSMencoders/bird/text_encoder200.pth --output_dir output
 
-# Move the generated image:
+### Move the generated image:
 cd output
 mv 0_s_0_g2.png /home/ubuntu/neural-style-docker/content.png
 
 
-# To run the style transfer:
+### To run the style transfer:
 cd neural-style-docker
 sudo nvidia-docker run --rm -v /home/ubuntu/neural-style-docker:/images albarji/neural-style --content content.png --style style.png
 
