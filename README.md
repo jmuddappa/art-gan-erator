@@ -14,9 +14,9 @@ Clone repository and run setup.sh in terminal which will install all the necessa
 
 ## Usage
 
-To run the AttGAN model:
+# To run the AttGAN model:
 
-# cd AttnGAN
+cd AttnGAN
 python2 gen_art.py --gpu 0 --input_text "the bear is eating a banana" --data_dir data/birds --model_path models/bird_AttnGAN2.pth --textencoder_path DAMSMencoders/bird/text_encoder200.pth --output_dir output
 
 # Move the generated image:
