@@ -1,4 +1,6 @@
-# Tattoo GANerator
+![](https://i.imgur.com/43kusrF.png)
+
+# Art GAN-erator
 Framework for machine learning projects at Insight Data Science.
 
 ## Motivation for this project format:
