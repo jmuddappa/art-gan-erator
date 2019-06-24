@@ -10,7 +10,7 @@ from PIL import Image, ImageDraw, ImageFont
 from copy import deepcopy
 import skimage.transform
 
-from miscc.config import cfg
+from ..miscc.config import cfg
 
 
 # For visualization ################################################

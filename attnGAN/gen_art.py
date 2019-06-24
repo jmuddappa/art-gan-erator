@@ -18,7 +18,7 @@ from nltk.tokenize import RegexpTokenizer
 
 # From files
 from datasets import TextDataset
-from miscc.config import cfg, cfg_from_file
+from .miscc.config import cfg, cfg_from_file
 from trainer import condGANTrainer as trainer
 
 dir_path = (os.path.abspath(os.path.join(os.path.realpath(__file__), './.')))

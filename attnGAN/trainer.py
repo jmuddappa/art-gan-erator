@@ -9,16 +9,16 @@ import torch.backends.cudnn as cudnn
 
 from PIL import Image
 
-from miscc.config import cfg
-from miscc.utils import mkdir_p
-from miscc.utils import build_super_images, build_super_images2
-from miscc.utils import weights_init, load_params, copy_G_params
+from .miscc.config import cfg
+from .miscc.utils import mkdir_p
+from .miscc.utils import build_super_images, build_super_images2
+from .miscc.utils import weights_init, load_params, copy_G_params
 from model import G_DCGAN, G_NET
 from datasets import prepare_data
 from model import RNN_ENCODER, CNN_ENCODER
 
-from miscc.losses import words_loss
-from miscc.losses import discriminator_loss, generator_loss, KL_loss
+from .miscc.losses import words_loss
+from .miscc.losses import discriminator_loss, generator_loss, KL_loss
 import os
 import time
 import numpy as np
