@@ -10,7 +10,7 @@ A project developed over four weeks at the Insight Fellowship that makes use of 
 - **AWS and PyTorch** : Code on a p2.xlarge AWS machine making use of PyTorch to modify the models as required.
 
 ## Setup
-Clone repository and run setup.sh in terminal which will install all the necessary files, models and data. This process can take some time as there are around 2GB of files required for this project.
+Clone repository using and run setup.sh in terminal which will install all the necessary files, models and data. This process can take some time as there are around 2GB of files required for this project.
 
 ## Usage
 
