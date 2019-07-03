@@ -9,8 +9,26 @@ A project developed over four weeks at the Insight Fellowship that makes use of 
 - **Flask and Docker** : Made use of Flask and Docker to serve the two models in a distributed fashion so that multiple users can use the web application at the same time
 - **AWS and PyTorch** : Code on a p2.xlarge AWS machine making use of PyTorch to modify the models as required.
 
+## Dependencies
+1. pipenv
+2. python 2.6
+Instructions: 
+brew install pyenv
+Then,
+pyenv install 2.7.10 
+to install, and
+pyenv global 2.7.10
+
+If any errors: 'xcode-select --reset', if xcode not installed then first run 'xcode-select --install'
+
+
+
 ## Setup
-Clone repository using and run setup.sh in terminal which will install all the necessary files, models and data. This process can take some time as there are around 2GB of files required for this project.
+1. Clone repository.
+
+2. Enter the script folder through your terminal and run setup.sh using: "sh setup.sh" - which will install all the necessary files, models and data. This process can take some time as there are around 2GB of files required for this project.
+
+3. Create a virtual environment in root folder (i.e. art-gan-erator) using "pipenv shell". After this run "pip install -r requirements.txt" to install all the necessary dependencies of the project. 
 
 ## Usage
 
