@@ -12,14 +12,28 @@ output_dir = os.path.join(project_dir, 'images')
 
 app = Flask(__name__, static_url_path='/static')
 
+# No caching at all for API endpoints.
+@app.after_request
+def add_header(response):
+    # response.cache_control.no_store = True
+    response.headers['Cache-Control'] = 'no-store, no-cache, must-revalidate, post-check=0, pre-check=0, max-age=0'
+    response.headers['Pragma'] = 'no-cache'
+    response.headers['Expires'] = '-1'
+    return response
+
 @app.route("/")
 def hello():
     return "Hello World!"
 
-@app.route("/test")
+@app.route("/input")
+def input():
+	return render_template('input.html')
+
+@app.route("/output")
 def test():
-	run()
-	return render_template('index.html')
+	input_text = request.args.get('input')
+	run(input_text=input_text)
+	return render_template('output.html', value=input_text)
 
 """
 python2 gen_art.py
@@ -30,12 +44,12 @@ python2 gen_art.py
 --textencoder_path DAMSMencoders/bird/text_encoder200.pth
 --output_dir output
 """
-def run(input_text = "the red bird", gpu_id=0, data_dir="attnGAN/data/birds",
+def run(input_text = "", gpu_id=0, data_dir="attnGAN/data/birds",
         model_path = "attnGAN/models/bird_AttnGAN2.pth",
         textencoder_path="attnGAN/DAMSMencoders/bird/text_encoder200.pth",
         output_directory="static"):
-    import sys
-    print(sys.version)
+    
+    print(input_text)
 
  #   args = parse_args()
 

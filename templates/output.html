@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<title>Art GAN-erator</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/output.css') }}">
+<body>
+
+
+<div class="w3-container">
+  <h2></h2>
+
+  <div class="w3-card-4">
+    <div class="w3-container w3-green">
+      <h2>Input text</h2>
+    </div>
+
+    <form action="/output" class="w3-container">
+      <p>
+      <input class="w3-input" type="text" value="{{ value }}" name="input">
+      <label></label></p>
+      <p>
+    </form>
+ </div>
+</div>
+
+<div class="center">
+  <body>
+    <img src='/static/0_s_0_g2.png'/>
+  </body>
+</div>
+</html>  
