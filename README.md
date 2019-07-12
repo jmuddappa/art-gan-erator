@@ -34,7 +34,9 @@ To run the web application use:
 
 
 ### To run the style transfer:
-sudo nvidia-docker run --rm -v /home/ubuntu/neural-style-docker:/images albarji/neural-style --content content.png --style style.png
+
+
+    sudo nvidia-docker run --rm -v /home/ubuntu/neural-style-docker:/images albarji/neural-style --content content.png --style style.png
 
 
 ## Results
