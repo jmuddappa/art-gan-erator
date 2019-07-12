@@ -26,16 +26,18 @@ If any errors: 'xcode-select --reset', if xcode not installed then first run 'xc
 ## Setup
 1. Clone repository.
 
-2. Enter the script folder through your terminal and run setup.sh using: "sh setup.sh" - which will install all the necessary files, models and data. This process can take some time as there are around 2GB of files required for this project.
+2. Enter the repository folder through your terminal and run setup.sh using: "sh setup.sh" - which will install all the necessary files, models and data. This process can take some time as there are around 2GB of files required for this project.
 
 3. Create a virtual environment in root folder (i.e. art-gan-erator) using "pipenv shell". After this run "pip install -r requirements.txt" to install all the necessary dependencies of the project. 
 
 ## Usage
 
-### To run the AttGAN model:
+### To run the AttGAN flask application:
 
-cd AttnGAN
-python2 gen_art.py --gpu 0 --input_text "the bear is eating a banana" --data_dir data/birds --model_path models/bird_AttnGAN2.pth --textencoder_path DAMSMencoders/bird/text_encoder200.pth --output_dir output
+To run the web application use:
+
+    flask run
+
 
 ### Move the generated image:
 cd output
@@ -48,4 +50,17 @@ sudo nvidia-docker run --rm -v /home/ubuntu/neural-style-docker:/images albarji/
 
 
 ## Results
+
+## Credits
+These papers proved invaluable in understanding the problem space:
+
+https://arxiv.org/abs/1508.06576
+
+https://arxiv.org/abs/1711.10485
+
+This work would not have been possible without the code bases from the following 2 repos:
+
+https://github.com/taoxugit/AttnGAN
+
+https://github.com/jcjohnson/neural-style
 
