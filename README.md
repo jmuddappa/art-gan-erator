@@ -15,7 +15,7 @@ A project developed over three weeks at the Insight Fellowship that makes use of
 3. A GPU!
 
 Instructions: 
-     brew install pyenv
+    brew install pyenv
 Then,
      pyenv install 2.7.10 
 to install, and
