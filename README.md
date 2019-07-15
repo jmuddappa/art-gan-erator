@@ -90,7 +90,11 @@ Ensure that your IP is added in the security groups if you are using a AWS serve
 
 ![](GAN2.gif)
 
-Integrating a tf.js style transfer application with my web application to have this final result. 
+1. Integrating a tf.js style transfer application with my web application to have this final result eliminating the need for current nvidia-docker style transfer.
+
+2. Having a CPU only version of attnGAN to remove dependency on GPU completely from the application.
+
+3. Developing a scalable application that can serve multiple simultatenous users. Future commercialization potential!
 
 ## Credits
 These papers proved invaluable in understanding the problem space:
