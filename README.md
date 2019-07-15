@@ -41,7 +41,7 @@ To run the web application use:
 
 ## Results
 
-![](GAN.gif)
+![](GAN-gif-video.gif)
 
 
 ## Troubleshooting
