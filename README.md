@@ -13,6 +13,7 @@ A project developed over three weeks at the Insight Fellowship that makes use of
 1. pipenv
 2. python 2.7 (does not work with Python 3!)
 3. A GPU!
+4. [nvidia-docker](https://chunml.github.io/ChunML.github.io/project/Installing-NVIDIA-Docker-On-Ubuntu-16.04/)
 
 
 ## Setup
