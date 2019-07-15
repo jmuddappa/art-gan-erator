@@ -36,7 +36,7 @@ pip install -r requirements.txt
 
 To run the web application use:
 
-    flask run
+    flask run -h 0.0.0.0
     
 Then navigate to the IP address http://0.0.0.0:5000/input or if using an AWS server go to http://your-public-ip:5000/input in a browser.
 
