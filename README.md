@@ -18,15 +18,17 @@ A project developed over three weeks at the Insight Fellowship that makes use of
 ## Setup
 1. Clone repository.
 
-2. Enter the repository folder through your terminal and run setup.sh using: 
+2. Enter the repository folder through your terminal and run setup.sh which will install all the necessary files, models and data. This process can take some time as there are around 2GB of files required for this project. 
 
 ```
 sh setup.sh
 ```
 
-"sh setup.sh" - which will install all the necessary files, models and data. This process can take some time as there are around 2GB of files required for this project.
-
-3. Create a virtual environment in root folder (i.e. art-gan-erator) using "pipenv shell". After this run "pip install -r requirements.txt" to install all the necessary dependencies of the project. 
+3. Create a virtual environment in root folder (i.e. art-gan-erator) to install all dependencies:
+```
+pipenv shell
+pip install -r requirements.txt
+```
 
 ## Usage
 
@@ -36,11 +38,11 @@ To run the web application use:
 
     flask run
     
-Then vigate to to the IP address http://0.0.0.0:5000/input or if using an AWS server go to http://your-public-ip:5000/input in a browser.
+Then navigate to the IP address http://0.0.0.0:5000/input or if using an AWS server go to http://your-public-ip:5000/input in a browser.
 
 ### To run the style transfer:
 
-Result of the text-to-image application are stored in the static folder in root directory. To style the image with a custom style, add an image titled as: "style.png" to the folder.
+Results of previous step are stored in the static folder in root directory. To style the image with a custom style, add an image titled as: "style.png" to static folder.
 
     sudo nvidia-docker run --rm -v ~/art-gan-erator:/images albarji/neural-style --content static/0_s_0_g2.png --style static/style.png --output output
 
@@ -79,6 +81,12 @@ If any errors when installing python:
 
     xcode-select --install
     xcode-select --reset
+
+## Future steps
+
+![](GAN-gif-video.gif)
+
+Integrating tf.js style transfer with my web application to have this final result
 
 ## Credits
 These papers proved invaluable in understanding the problem space:
