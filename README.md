@@ -18,7 +18,13 @@ A project developed over three weeks at the Insight Fellowship that makes use of
 ## Setup
 1. Clone repository.
 
-2. Enter the repository folder through your terminal and run setup.sh using: "sh setup.sh" - which will install all the necessary files, models and data. This process can take some time as there are around 2GB of files required for this project.
+2. Enter the repository folder through your terminal and run setup.sh using: 
+
+```
+sh setup.sh
+```
+
+"sh setup.sh" - which will install all the necessary files, models and data. This process can take some time as there are around 2GB of files required for this project.
 
 3. Create a virtual environment in root folder (i.e. art-gan-erator) using "pipenv shell". After this run "pip install -r requirements.txt" to install all the necessary dependencies of the project. 
 
