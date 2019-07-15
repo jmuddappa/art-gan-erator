@@ -84,7 +84,7 @@ If any errors when installing python:
 
 ## Future steps
 
-![](GAN-gif-video.gif)
+![](GAN2.gif)
 
 Integrating tf.js style transfer with my web application to have this final result
 
