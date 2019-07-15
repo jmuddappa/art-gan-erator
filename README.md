@@ -58,11 +58,11 @@ The results are stored in static folder as "0_s_0_g2.png".
 
 Some styled results:
 
-With ss = 1
+With **ss = 1**
 
 ![](sw1.png)
 
-With ss = 2
+With **ss = 2**
 
 ![](sw2.png)
 
