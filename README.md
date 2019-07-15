@@ -84,6 +84,7 @@ If any errors when installing python:
     xcode-select --install
     xcode-select --reset
 
+Ensure that your IP is added in the security groups if you are using a AWS server to run this code or the application will not be accessible.
 ## Future steps
 
 ![](GAN2.gif)
