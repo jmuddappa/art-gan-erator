@@ -31,17 +31,31 @@ A project developed over three weeks at the Insight Fellowship that makes use of
 To run the web application use:
 
     flask run
-
+    
+Then vigate to to the IP address http://0.0.0.0:5000/input or if using an AWS server go to http://your-public-ip:5000/input in a browser.
 
 ### To run the style transfer:
 
+Result of the text-to-image application are stored in the static folder in root directory. To style the image with a custom style, add an image titled as: "style.png" to the folder.
 
-    sudo nvidia-docker run --rm -v /home/ubuntu/neural-style-docker:/images albarji/neural-style --content content.png --style style.png
 
+    sudo nvidia-docker run --rm -v ~/art-gan-erator:/images albarji/neural-style --content static/0_s_0_g2.png --style static/style.png
+
+Different strengths of the style can be applied by adding the option ss as follows:
+
+    --ss 0.75 1 1.25
+    
+Each number will generate an image with given style strength. Smaller numbers reduce the amount of style applied to the generated image. Experimenting with these numbers I found 0.75-1 to be a good sweet spot for producing good bird-art images.
 
 ## Results
 
+The flask application:
+
 ![](GAN-gif-video.gif)
+
+The results are stored in static folder as "0_s_0_g2.png".
+
+Some styled results:
 
 
 ## Troubleshooting
@@ -64,9 +78,11 @@ https://arxiv.org/abs/1508.06576
 
 https://arxiv.org/abs/1711.10485
 
-This work would not have been possible without the code bases from the following 2 repos:
+This work would not have been possible without the code bases from the following 3 repos:
 
 https://github.com/taoxugit/AttnGAN
 
 https://github.com/jcjohnson/neural-style
+
+https://github.com/albarji/neural-style-docker
 
