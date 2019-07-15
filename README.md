@@ -39,13 +39,14 @@ Then vigate to to the IP address http://0.0.0.0:5000/input or if using an AWS se
 Result of the text-to-image application are stored in the static folder in root directory. To style the image with a custom style, add an image titled as: "style.png" to the folder.
 
 
-    sudo nvidia-docker run --rm -v ~/art-gan-erator:/images albarji/neural-style --content static/0_s_0_g2.png --style static/style.png
+    sudo nvidia-docker run --rm -v ~/art-gan-erator:/images albarji/neural-style --content static/0_s_0_g2.png --style static/style.png --output output
 
 Different strengths of the style can be applied by adding the option ss as follows:
 
     --ss 0.75 1 1.25
     
-Each number will generate an image with given style strength. Smaller numbers reduce the amount of style applied to the generated image. Experimenting with these numbers I found 0.75-1 to be a good sweet spot for producing good bird-art images.
+Each number will generate an image with given style strength. Smaller numbers reduce the amount of style applied to the generated image. Experimenting with these numbers I found 0.75-1 to be a good sweet spot for producing good bird-art images. Styled images are stored in the output folder.
+
 
 ## Results
 
@@ -56,6 +57,14 @@ The flask application:
 The results are stored in static folder as "0_s_0_g2.png".
 
 Some styled results:
+
+With ss = 1
+
+![](sw1.png)
+
+With ss = 2
+
+![](sw2.png)
 
 
 ## Troubleshooting
