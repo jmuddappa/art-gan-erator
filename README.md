@@ -1,9 +1,7 @@
 ![](https://i.imgur.com/43kusrF.png)
 
 # Art GAN-erator
-A project developed over three weeks at the Insight Fellowship that makes use of GANs + Style transfer to lower overhead costs of the ideation process for artists.
-
-
+A project developed over three weeks at the Insight Fellowship that makes use of GANs + Style transfer to lower overhead costs of the ideation process for artists. My project aims to do so by generating novel images using text and then applying multiple styles to the image to quickly generate ideas.
 
 ## Features
 - **Attentional GAN** : Implemented an attentional GAN which is capable of paying attention to the relevant words in a given text input and uses it to generate novel images
@@ -38,7 +36,6 @@ Then vigate to to the IP address http://0.0.0.0:5000/input or if using an AWS se
 
 Result of the text-to-image application are stored in the static folder in root directory. To style the image with a custom style, add an image titled as: "style.png" to the folder.
 
-
     sudo nvidia-docker run --rm -v ~/art-gan-erator:/images albarji/neural-style --content static/0_s_0_g2.png --style static/style.png --output output
 
 Different strengths of the style can be applied by adding the option ss as follows:
@@ -46,7 +43,6 @@ Different strengths of the style can be applied by adding the option ss as follo
     --ss 0.75 1 1.25
     
 Each number will generate an image with given style strength. Smaller numbers reduce the amount of style applied to the generated image. Experimenting with these numbers I found 0.75-1 to be a good sweet spot for producing good bird-art images. Styled images are stored in the output folder.
-
 
 ## Results
 
@@ -66,14 +62,12 @@ With **ss = 2**
 
 ![](sw2.png)
 
-
 ## Troubleshooting
 To install pyenv and python: 
      
     brew install pyenv
     pyenv install 2.7.10
     pyenv global 2.7.10
-
 
 If any errors when installing python: 
 
