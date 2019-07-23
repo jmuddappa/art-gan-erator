@@ -39,7 +39,7 @@ To run the web application use:
 
     flask run -h 0.0.0.0
     
-Then navigate to the IP address http://0.0.0.0:5000/input or if using an AWS server go to http://your-public-ip:5000/input in a browser.
+Then navigate to the IP address http://0.0.0.0:5000/input or if using an AWS server (see running on AWS tips below) go to http://your-public-ip:5000/input in a browser.
 
 ### To run the style transfer:
 
@@ -86,6 +86,19 @@ If any errors when installing python:
     xcode-select --reset
 
 Ensure that your IP is added in the security groups if you are using a AWS server to run this code or the application will not be accessible.
+
+## Running on AWS tips
+
+1. Add 'your-IP-address/32' to inbound rules in security groups in the AWS console (EC2 console) with SSH access to SSH into AWS
+2. Also add 'your-IP-address/32' to inbound rules in security groups with TCP access in port 5000 
+3. SSH into AWS using your credentials - I use the connect command on AWS terminal and copy paste the example instruction.
+4. Run pipenv shell, ensure all dependencies are properly installed and the flask run command as detailed above
+5. If everything is running properly then it should look like this when flask run command is run:
+
+![](https://i.imgur.com/sAaXQyL.png)
+
+6. Finally navigate to 'your-public-ip:5000/input' which can be found in the AWS console under the instances tab.
+
 ## Future steps
 
 ![](GAN2.gif)
