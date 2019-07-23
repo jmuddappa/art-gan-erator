@@ -85,7 +85,7 @@ If any errors when installing python:
     xcode-select --install
     xcode-select --reset
 
-Ensure that your IP is added in the security groups if you are using a AWS server to run this code or the application will not be accessible.
+If nvidia-docker does not work - ensure NVIDIA driver is up and running by running nvidia-smi in the AWS terminal. If this command fails or no GPU is detected then ensure that your server has a GPU and re-install the nvidia drivers using the tutorial linked in the dependencies. 
 
 ## Running on AWS tips
 
