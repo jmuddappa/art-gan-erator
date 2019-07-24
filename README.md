@@ -14,14 +14,20 @@ A project developed over three weeks at the Insight Fellowship that makes use of
 2. python 2.7 (does not work with Python 3!)
 3. A GPU!
 4. [nvidia-docker](https://chunml.github.io/ChunML.github.io/project/Installing-NVIDIA-Docker-On-Ubuntu-16.04/)
+5. unzip (On Ubuntu - 'sudo apt-get unzip')
 
 
 ## Setup
 1. Clone repository.
 
+```
+git clone https://github.com/jmuddappa/art-gan-erator
+```
+
 2. Enter the repository folder through your terminal and run setup.sh which will install all the necessary files, models and data. This process can take some time as there are around 2GB of files required for this project. 
 
 ```
+cd art-gan-erator
 sh setup.sh
 ```
 
