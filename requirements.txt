@@ -7,6 +7,7 @@ cloudpickle==1.2.1
 cycler==0.10.0
 decorator==4.4.0
 easydict==1.9
+flask==1.0.3
 future==0.17.1
 kiwisolver==1.1.0
 matplotlib==2.2.4
