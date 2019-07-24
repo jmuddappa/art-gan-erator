@@ -10,10 +10,7 @@ A project developed over three weeks at the Insight Fellowship that makes use of
 - **AWS and PyTorch** : Coded on a p2.xlarge AWS machine making use of PyTorch to modify the codebase.
 
 ## Dependencies
-1. pipenv 
-```
-pip install pipenv
-```
+1. pipenv [`pip install pipenv`]
 2. python 2.7 (does not work with Python 3! See troubleshooting section if you are having trouble here.) 
 3. A GPU!
 4. [nvidia-docker](https://chunml.github.io/ChunML.github.io/project/Installing-NVIDIA-Docker-On-Ubuntu-16.04/)
