@@ -3,7 +3,7 @@
 # Art GAN-erator
 A project developed over three weeks at the Insight Fellowship that makes use of GANs + Style transfer to lower overhead costs of the ideation process for artists. My project aims to do so by generating novel images using text and then applying multiple styles to the image to quickly generate ideas.
 
-![Powerpoint presentation](https://docs.google.com/presentation/d/1q804llhFhxEgkN4-jcuPSoKeK1GrOsk0CIqM6k8r4Zk/edit?usp=sharing)
+A short powerpoint presentation can be viewed here: https://docs.google.com/presentation/d/1q804llhFhxEgkN4-jcuPSoKeK1GrOsk0CIqM6k8r4Zk/edit?usp=sharing)
 
 ## Features
 - **Attentional GAN** : Implemented an attentional GAN which is capable of paying attention to the relevant words in a given text input and uses it to generate novel images
