@@ -109,16 +109,6 @@ If nvidia-docker does not work - ensure NVIDIA driver is up and running by runni
 
 6. Finally navigate to 'your-public-ip:5000/input' which can be found in the AWS console under the instances tab.
 
-## Future steps
-
-![](GAN2.gif)
-
-1. Integrating a tf.js style transfer application with my web application to have this final result eliminating the need for current nvidia-docker style transfer.
-
-2. Having a CPU only version of attnGAN to remove dependency on GPU completely from the application.
-
-3. Developing a scalable application that can serve multiple simultatenous users. Future commercialization potential!
-
 ## Credits
 These papers proved invaluable in understanding the problem space:
 
