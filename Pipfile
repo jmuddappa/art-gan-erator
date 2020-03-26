@@ -29,7 +29,7 @@ torch = "==1.1.0"
 torchvision = "==0.3.0"
 "backports.functools_lru_cache" = "==1.5"
 Cycler = "==0.10.0"
-Pillow = "==6.0.0"
+Pillow = "==6.2.0"
 PyWavelets = "==1.0.3"
 PyYAML = "==5.1.1"
 
